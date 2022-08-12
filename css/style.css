@@ -1,0 +1,355 @@
+/* start common css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+a {
+   text-decoration: none;
+}
+/* End common css */
+
+/* header start */
+.mainhead {
+    background: url(../images/banner2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
+    /* clip-path: polygon(0% 0%, 0% 74%, 18% 69%, 44% 65%, 61% 66%, 83% 69%, 100% 74%, 100% 0); */
+    clip-path: polygon(0% 0%, 0% 77%, 21% 72%, 43% 69%, 68% 69%, 88% 72%, 100% 75%, 100% 0%);
+
+}
+header {
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+header a {
+    color: rgb(230, 222, 222);
+    font-weight: 700;
+}
+header .logo {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0px 5px 15px;
+}
+header .contaner {
+    margin-right: 10px;
+}
+header .contaner nav ul {
+    list-style: none;
+    display: flex;
+    padding: 15px 0 0 0;
+    gap: 30px;
+    color: white;
+    margin-right: 10px;
+    
+}
+header .contaner nav ul li a {
+    color: rgb(241, 234, 234);
+    padding: 3px;
+    border-radius: 3px;
+}
+header .contaner nav ul li a:hover {
+    color: black;
+    display: block;
+    transition: all .3s linear;
+    background-color: black;
+    color: wheat;
+}
+header .contaner nav ul li.drop {
+    position: relative;
+}
+header .contaner nav ul li.drop ul {
+    position: absolute;
+    top: 20px;
+    left: -5%;
+    width: 150px;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px rgb(46, 45, 45);
+    display: none;
+}
+header .contaner nav ul li.drop:hover > ul {
+    display: flex;
+    transition: all .3s linear;
+}
+/* header end */
+
+/* banner start */
+.banner {
+    width: 1170px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 100px 0px 0px 18px;
+}
+.banner-part .banner h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.banner-part .banner h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    padding-top: 25px;
+}
+/* banner end */
+
+/* About start */
+.about {
+    display: flex;
+    width: 1170px;
+    margin: -120px auto;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.about img {
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 0px 3px gray;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.about .content p:nth-child(1) {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 30px;
+}
+.about .content p:nth-child(2) {
+    color: gray;
+    font-size: 17px;
+    padding-left: 30px;
+}
+.about .content .socal {
+    display: flex;
+    padding-top: 50px;
+    color: rgb(75, 71, 71);
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 30px;
+    gap: 20px;
+}
+.about .content .socal h6 {
+    color: rgb(75, 71, 71);
+    font-size: 15px;
+    font-weight: 900;
+}
+.about .content ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.about .content ul li a {
+    color: black;
+}
+.about .content ul li a:hover {
+    transition: all .3s linear;
+    color: rgb(17, 229, 236);
+}
+/* About END */
+
+/* section start */
+.main-service {
+    background-color: rgba(156, 159, 161, 0.288);
+    padding: 300px 0px 200px 15px;
+    clip-path: polygon(0 14%, 24% 21%, 47% 24%, 74% 22%, 100% 14%, 100% 88%, 75% 93%, 49% 95%, 23% 94%, 0 90%);
+    /* clip-path: polygon(0% 100%, 0% 20%, 20% 26%, 45% 28%, 66% 28%, 80% 26%, 91% 22%, 100% 18%, 100% 100%); */
+}
+.main-service .container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.container .title {
+    position: relative;
+}
+.container .title ::before {
+    content: '';
+    position: absolute;
+    left: 535px;
+    width: 100px;
+    height: 2px;
+    background-color: rgb(26, 21, 21);
+    top: 55%;
+}
+.main-service .container .title h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+.main-service .container .content {
+    display: flex;
+    gap: 30px;
+}
+.main-service .content .col {
+    width: 350px;
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.5);
+}
+.main-service .content .col .icon {
+    height: 70px;
+    width: 70px;
+    background-color: rgba(156, 159, 161, 0.288);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    margin: 0 auto;
+    font-size: 30px;
+    transition: all .3s ease-in-out;
+}
+.main-service .content .col:hover > .icon{
+    background-color: black;
+    color: white;
+}
+.main-service .content .col h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-service .content .col p {
+    color: rgb(68, 75, 75);
+    font-weight: 600;
+}
+/* section End */
+
+/* section portfolio start */
+.main-portfolio {
+    padding: 100px 0px 150px 15px;
+}
+.main-portfolio .container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.main-portfolio .title {
+    position: relative;
+    text-align: center;
+}
+.main-portfolio .title ::before {
+    content: '';
+    position: absolute;
+    left: 530px;
+    width: 115px;
+    height: 2px;
+    background-color: rgb(26, 21, 21);
+    top: 55%;
+}
+.main-portfolio .container .title h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.main-portfolio .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    gap: 10px;
+}
+.main-portfolio .content .box {
+    width: 30%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.main-portfolio .content .box img {
+    height: 100%;
+    width: 100%;
+}
+.main-portfolio .content .box .slider {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: rgba(42, 42, 44, 0.212);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+}
+.main-portfolio .content .box .slider h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+.main-portfolio .content .box .slider a {
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    margin-top: 25px;
+    padding: 4px 12px;
+    border-radius: 15%;
+    font-weight: 700;
+    transition: all .3s linear;
+}
+.main-portfolio .content .box .slider a:hover {
+    color: white;
+    background-color: gray;
+    box-shadow: 1px 1px 25px 3px black;
+}
+.main-portfolio .content .box:hover > .slider {
+    display: flex;
+    right: 0%;
+}
+/* section portfolio end */
+
+/* footer part start */
+.main-footer {
+    background-color: black;
+}
+.main-footer .content {
+    width: 1170px;
+    margin: 0 auto;
+}
+.main-footer .content h3 {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.main-footer .content ul {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+}
+.main-footer .content ul li a i {
+    color: white;
+    font-size: 1rem;
+    padding: 13px 0 10px 0px;
+    background-color: rgb(58, 56, 56);
+    transition: all .3s linear;
+    height: 42px;
+    width: 42px;
+}
+.main-footer .content ul li a i:hover {
+    color: black;
+    background-color: wheat;
+}
+.main-footer .content p {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+/* footer part End */
