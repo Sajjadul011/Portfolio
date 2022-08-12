@@ -161,7 +161,7 @@ header .contaner nav ul li.drop:hover > ul {
 }
 /* About END */
 
-/* section start */
+/* section service start */
 .main-service {
     background-color: rgba(156, 159, 161, 0.288);
     padding: 300px 0px 200px 15px;
@@ -226,7 +226,7 @@ header .contaner nav ul li.drop:hover > ul {
     color: rgb(68, 75, 75);
     font-weight: 600;
 }
-/* section End */
+/* section service End */
 
 /* section portfolio start */
 .main-portfolio {
